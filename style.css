@@ -1,0 +1,49 @@
+/*
+    Layout: outline/buttons
+*/
+
+.box {
+    padding: 5px;
+    margin-bottom: 15px;
+    border: solid 1px;
+    display: block;
+}
+
+.block button {
+    display: block;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.event {
+    display: none;
+}
+
+/*
+    Layout: left/middle/right
+*/
+
+.left-money {
+  position: fixed;
+  top: 75px;
+  width: 340px;
+  height: 100%;
+  overflow: auto;
+}
+
+.right-store {
+  position: fixed;
+  top: 75px;
+  right: 10px;
+  width: 340px;
+  height: 100%;
+  float: right;
+}
+
+.main-items {
+  position: fixed;
+  top: 75px;
+  left: 360px;
+  width: calc(100% - 750px);
+  height: 300px;
+}

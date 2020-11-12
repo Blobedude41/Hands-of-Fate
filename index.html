@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hands of Fate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="margin: none;">Hands of Fate</h1>
+
+    <!-- LEft side -->
+    <div class="left-money">
+        <!-- Money Types // Key -->
+        <div class="box">
+            <!-- How many coins you have -->
+            <p id="coinsG">0 Coins</p>
+            <p id="soulsG">0 Souls</p>
+            <p id="fateG">0 Fate</p>
+        </div>
+
+        <!-- Clicker's -->
+        <div class="box">
+            <!-- Grabs a coin -->
+            <button onclick="grabCoin();">Grab Coin</button>
+
+            <!-- Grabs a soul -->
+            <button id="sButton" class="event" onclick="grabSoul();">Grab Soul</button>
+        </div>
+        
+        <div class="box">
+           
+           <h4>Key</h4>
+           <p>Grow a hand -- adds coins per click</p>
+           <p>Free a hand -- adds coins per click</p>
+           <p>Unleash a Soul hand -- adds clicks per second</p>
+           <p>Soul Generators -- adds souls per click </p>
+           <p>Soul Summoners -- adds souls per second</p>
+           <hr>
+           <p>cpc -- Coins per Click</p>
+           <p>cps -- Coins per Second</p>
+           <p>spc -- Souls per Click</p>
+           <p>sps -- Souls per Second</p>
+        </div>
+
+    </div>
+
+    <!-- Items -->
+    <div class="box main-items">
+        <h3 id="totalC">Items</h3>
+        <p id="hands"></p>
+        <p id="freeHands"></p>
+        <p id="greatHands"></p>
+        <p id="soulGens"></p>
+        <p id="soulSums"></p>
+    </div>
+
+    <!-- Store -->
+    <div class="box block right-store">
+        <h3>Store</h3>
+        <hr>
+
+        <!--
+           --- Hands ---
+       -->
+
+        <h4>Hands</h4>
+        <!-- Buys a hand to add more coins per click -->
+        <button onclick="buyHand();" id="HandUpgrade">Grow a hand | Cost: 10 Coins</button>
+
+        <!-- Free hands -->
+        <button onclick="buyFreeHand();" id="FreeHandUpgrade">Free a hand | Cost: 50 Coins</button>
+
+        <!-- Soul Hand -->
+        <button onclick="buyGreatHand();" id="GreatHandUpgrade">Unleash a Great Hand | Cost: 100 Souls</button>
+
+        <!--
+           --- Souls ---
+       -->
+
+        <h4>Souls</h4>
+        <!-- Soul Generator -->
+        <button onclick="buySoulGen();" id="SoulGenUpgrade">Soul Generator | Cost: 100 Coins</button>
+        
+        <!-- Soul Summoner -->
+        <button onclick="buySoulSum();" id="SoulSumUpgrade">Soul Summoner | Cost: 100 Souls</button>
+
+        <!--
+           --- Fate ---
+       -->
+
+        <h4>Fate</h4>
+        <hr>
+
+    </div>
+
+    <!-- script -->
+    <script src="main.js"></script>
+</body>
+</html>
